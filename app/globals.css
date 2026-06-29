@@ -460,3 +460,38 @@ button {
   color: #94a3b8;
   margin-top: 8px;
 }
+.reviews-section,
+.service-area {
+  padding: 120px 7%;
+  text-align: center;
+}
+
+.reviews-header {
+  margin-bottom: 50px;
+}
+
+.reviews-eyebrow {
+  color: #1d9bf0;
+  font-weight: 800;
+  letter-spacing: .18em;
+  font-size: .85rem;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:24px;
+}
+
+.review-card {
+  padding:32px;
+  border-radius:24px;
+  background:#f8fafc;
+  border:1px solid #e2e8f0;
+}
+
+@media(max-width:900px){
+.reviews-grid{
+grid-template-columns:1fr;
+}
+}

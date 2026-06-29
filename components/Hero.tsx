@@ -25,11 +25,14 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="hero-visual">
+      <div
+        className="hero-visual"
+        style={{ backgroundImage: "url('/IMG_2372.jpeg')" }}
+      >
         <div className="glass-card">
           <p>Featured Standard</p>
-          <h2>Full Interior + Exterior Detail</h2>
-          <span>Professional mobile service built around quality.</span>
+          <h2>Professional Mobile Detailing</h2>
+          <span>Built on quality, presentation, and trust.</span>
         </div>
       </div>
     </section>

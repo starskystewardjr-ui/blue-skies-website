@@ -1,24 +1,21 @@
-const SQUARE_BOOKING_URL = "https://squareup.com/appointments/book/YOUR-LINK-HERE";
+const SQUARE_BOOKING_URL =
+  "https://book.squareup.com/appointments/e4u4kj67uec46l/location/L1K4ZCSWWNRA5/services";
 
 export default function Navbar() {
   return (
     <header className="navbar">
-      <a href="/" className="navbar-logo">
-        Blue Skies
+      <a href="/" className="logo">
+        <span>Blue</span> Skies
       </a>
 
-      <nav className="navbar-links">
+      <nav>
         <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
 
-      <a
-        href={SQUARE_BOOKING_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="navbar-button"
-      >
+      <a className="nav-cta" href={SQUARE_BOOKING_URL} target="_blank">
         Book Now
       </a>
     </header>

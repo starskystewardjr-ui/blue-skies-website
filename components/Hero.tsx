@@ -1,49 +1,36 @@
-const SQUARE_BOOKING_URL = "https://squareup.com/appointments/book/YOUR-LINK-HERE";
+const SQUARE_BOOKING_URL =
+  "https://book.squareup.com/appointments/e4u4kj67uec46l/location/L1K4ZCSWWNRA5/services";
 
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="hero-content">
-        <p className="hero-eyebrow">
-          COLUMBIA COUNTY MOBILE DETAILING
+      <div className="hero-copy">
+        <p className="eyebrow">Columbia County Mobile Detailing</p>
+
+        <h1>Luxury Results. Right At Your Home.</h1>
+
+        <p>
+          Premium mobile detailing for vehicle owners who expect precision,
+          professionalism, and respect for their investment.
         </p>
 
-        <h1>
-          Luxury Results.
-          <br />
-          Right At Your Home.
-        </h1>
-
-        <p className="hero-text">
-          Premium mobile detailing built for vehicle owners who expect
-          professionalism, precision, and respect for their investment.
-        </p>
-
-        <div className="hero-buttons">
-          <a
-            href={SQUARE_BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="primary-button"
-          >
+        <div className="button-row">
+          <a className="primary-btn" href={SQUARE_BOOKING_URL} target="_blank">
             Book Appointment
           </a>
 
-          <a href="#services" className="secondary-button">
+          <a className="secondary-btn" href="#services">
             View Services
           </a>
         </div>
       </div>
 
-      <div className="hero-card">
-        <p className="hero-card-label">OUR STANDARD</p>
-
-        <h2>Your Vehicle Is An Investment.</h2>
-
-        <p>
-          Every appointment is completed with professional equipment,
-          premium chemicals, and attention to detail from start to finish.
-        </p>
+      <div className="hero-visual">
+        <div className="glass-card">
+          <p>Featured Standard</p>
+          <h2>Full Interior + Exterior Detail</h2>
+          <span>Professional mobile service built around quality.</span>
+        </div>
       </div>
     </section>
   );

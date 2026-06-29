@@ -3,23 +3,13 @@ const SQUARE_BOOKING_URL =
 
 export default function CTA() {
   return (
-    <section className="cta-section">
-      <div className="cta-box">
-        <h2>Ready To Book?</h2>
+    <section id="contact" className="cta">
+      <h2>Ready To Book?</h2>
+      <p>Schedule your professional mobile detail in minutes.</p>
 
-        <p>
-          Schedule your professional mobile detail in just a few minutes.
-        </p>
-
-        <a
-          href={SQUARE_BOOKING_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="primary-button"
-        >
-          Book Appointment
-        </a>
-      </div>
+      <a className="primary-btn" href={SQUARE_BOOKING_URL} target="_blank">
+        Book Appointment
+      </a>
     </section>
   );
 }

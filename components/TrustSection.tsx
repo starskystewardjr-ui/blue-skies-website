@@ -1,30 +1,18 @@
-const trustItems = [
-  {
-    title: "Professional Equipment",
-    text: "Fully prepared mobile detailing setup brought directly to your location.",
-  },
-  {
-    title: "Premium Products",
-    text: "Quality chemicals and tools selected to protect your vehicle investment.",
-  },
-  {
-    title: "Mobile Convenience",
-    text: "No shop visit needed. We bring professional detailing to your driveway.",
-  },
-  {
-    title: "Detail-Focused Work",
-    text: "Every appointment is handled with care, precision, and respect for your property.",
-  },
+const items = [
+  ["Professional Equipment", "A prepared mobile detailing setup brought to you."],
+  ["Premium Products", "Quality tools and chemicals selected for your vehicle."],
+  ["Mobile Convenience", "No shop visit. We come directly to your driveway."],
+  ["Detail-Focused Work", "Care, precision, and respect from start to finish."],
 ];
 
 export default function TrustSection() {
   return (
-    <section className="trust-section">
-      {trustItems.map((item) => (
-        <div className="trust-card" key={item.title}>
-          <span className="trust-icon">✦</span>
-          <h3>{item.title}</h3>
-          <p>{item.text}</p>
+    <section className="trust">
+      {items.map(([title, text]) => (
+        <div className="trust-card" key={title}>
+          <span>✦</span>
+          <h3>{title}</h3>
+          <p>{text}</p>
         </div>
       ))}
     </section>

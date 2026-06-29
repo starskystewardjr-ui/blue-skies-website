@@ -394,3 +394,33 @@ button {
     grid-template-columns: 1fr;
   }
 }
+.about-section {
+  padding: 120px 7%;
+  background: white;
+}
+
+.about-content {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-eyebrow {
+  color: #1d9bf0;
+  font-size: .85rem;
+  font-weight: 800;
+  letter-spacing: .18em;
+}
+
+.about-content h2 {
+  margin-top: 18px;
+  font-size: 3rem;
+  color: #050b18;
+}
+
+.about-content p {
+  margin-top: 24px;
+  color: #64748b;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}

@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import TrustSection from "../components/TrustSection";
 import Services from "../components/Services";
+import Gallery from "../components/Gallery";
 
 export default function Home() {
   return (
@@ -10,9 +11,7 @@ export default function Home() {
       <Hero />
       <TrustSection />
       <Services />
+      <Gallery />
     </>
   );
 }
-import Gallery from "../components/Gallery";
-<Gallery />
-<Services />

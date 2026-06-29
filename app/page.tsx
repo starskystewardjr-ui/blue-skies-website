@@ -1,4 +1,3 @@
-import FloatingCTA from "../components/FloatingCTA";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Stats from "../components/Stats";
@@ -25,7 +24,6 @@ export default function Home() {
       <ServiceArea />
       <CTA />
       <Footer />
-      import FloatingCTA from "../components/FloatingCTA";
     </>
   );
 }

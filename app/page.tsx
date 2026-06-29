@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import Stats from "../components/Stats";
 import TrustSection from "../components/TrustSection";
 import Services from "../components/Services";
 import Gallery from "../components/Gallery";
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
+      <Stats />
       <TrustSection />
       <Services />
       <Gallery />

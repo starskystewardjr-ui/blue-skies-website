@@ -495,3 +495,33 @@ button {
 grid-template-columns:1fr;
 }
 }
+.stats-section {
+  background: #ffffff;
+  padding: 60px 7%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 3rem;
+  color: #050b18;
+}
+
+.stat p {
+  margin-top: 10px;
+  color: #64748b;
+}
+
+@media (max-width: 900px) {
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-section {
+    grid-template-columns: 1fr;
+  }
+}

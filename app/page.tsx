@@ -1,3 +1,4 @@
+import Services from "../components/Services";
 import Navbar from "../components/Navbar";
 import TrustSection from "../components/TrustSection";
 
@@ -46,6 +47,7 @@ export default function Home() {
       </section>
 
       <TrustSection />
+      <Services />
     </main>
   );
 }

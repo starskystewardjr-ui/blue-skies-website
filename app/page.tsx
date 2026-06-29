@@ -13,3 +13,6 @@ export default function Home() {
     </>
   );
 }
+import Gallery from "../components/Gallery";
+<Gallery />
+<Services />

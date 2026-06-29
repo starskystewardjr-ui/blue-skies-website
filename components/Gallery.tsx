@@ -1,12 +1,12 @@
 const galleryImages = [
-  { src: "/IMG_2693.jpeg", label: "Raptor Exterior" },
-  { src: "/IMG_7120.jpeg", label: "Luxury SUV Detail" },
-  { src: "/IMG_3183.jpeg", label: "Motorcycle Detail" },
-  { src: "/IMG_7068.jpeg", label: "Interior Reset" },
-  { src: "/IMG_7123.jpeg", label: "Luxury Interior" },
-  { src: "/IMG_2768.jpeg", label: "Red Leather Interior" },
-  { src: "/IMG_6772.jpeg", label: "Driveway Service" },
-  { src: "/IMG_6774.jpeg", label: "Mobile Detailing In Action" },
+  { src: "/IMG_2372.jpeg", label: "Blue Skies Team", className: "gallery-team" },
+  { src: "/IMG_2693.jpeg", label: "Raptor Exterior", className: "gallery-wide" },
+  { src: "/IMG_7120.jpeg", label: "Luxury SUV Detail", className: "gallery-wide" },
+  { src: "/IMG_7068.jpeg", label: "Interior Reset", className: "gallery-tall" },
+  { src: "/IMG_7123.jpeg", label: "Luxury Interior", className: "gallery-tall" },
+  { src: "/IMG_2768.jpeg", label: "Red Leather Interior", className: "gallery-tall" },
+  { src: "/IMG_3183.jpeg", label: "Motorcycle Detail", className: "gallery-wide" },
+  { src: "/IMG_6774.jpeg", label: "Mobile Detailing In Action", className: "gallery-tall" },
 ];
 
 export default function Gallery() {
@@ -22,9 +22,10 @@ export default function Gallery() {
         {galleryImages.map((image) => (
           <div
             key={image.src}
+            className={image.className}
             style={{ backgroundImage: `url('${image.src}')` }}
           >
-            {image.label}
+            <span>{image.label}</span>
           </div>
         ))}
       </div>

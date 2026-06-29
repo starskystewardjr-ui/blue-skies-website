@@ -553,3 +553,42 @@ a {
     font-size: 0.9rem;
   }
 }
+.hero-team-photo {
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-grid div {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-grid div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(2, 6, 23, 0.05),
+    rgba(2, 6, 23, 0.72)
+  );
+}
+
+.gallery-grid div span {
+  position: relative;
+  z-index: 2;
+}
+
+.gallery-team {
+  background-position: center 35% !important;
+}
+
+.gallery-wide {
+  background-position: center !important;
+}
+
+.gallery-tall {
+  background-position: center 35% !important;
+}

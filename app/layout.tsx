@@ -1,10 +1,32 @@
-import "./globals.css";
 import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Blue Skies Mobile Wash & Home Care | Starsky Steward Jr.",
+  title:
+    "Blue Skies Mobile Wash & Home Care | Mobile Detailing in Bloomsburg, PA",
+
   description:
-    "Premium mobile detailing in Columbia County, Bloomsburg, Berwick, Danville, Catawissa, Benton, Millville, and surrounding Pennsylvania areas. Founded by Starsky Steward Jr.",
+    "Premium mobile detailing serving Columbia County and surrounding areas. Exterior washes, deep interior details, premium detailing, and ceramic protection.",
+
+  keywords: [
+    "Blue Skies Mobile Wash",
+    "Blue Skies Mobile Wash & Home Care",
+    "Starsky Steward",
+    "Starsky Steward Jr.",
+    "mobile detailing",
+    "mobile car detailing",
+    "car detailing Bloomsburg",
+    "Bloomsburg PA detailing",
+    "Columbia County detailing",
+    "professional detailing",
+  ],
+
+  authors: [
+    {
+      name: "Starsky Steward Jr.",
+    },
+  ],
+
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",
@@ -14,10 +36,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
       <body>{children}</body>
     </html>
   );
-}

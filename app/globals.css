@@ -171,3 +171,46 @@ button {
     font-size: 3.5rem;
   }
 }
+.trust-section {
+  padding: 32px 7%;
+  background: #050b18;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+.trust-card {
+  background: #08111f;
+  color: white;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.trust-icon {
+  color: #38bdf8;
+  font-size: 1.4rem;
+}
+
+.trust-card h3 {
+  margin-top: 18px;
+  font-size: 1.1rem;
+}
+
+.trust-card p {
+  margin-top: 10px;
+  color: #94a3b8;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .trust-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .trust-section {
+    grid-template-columns: 1fr;
+  }
+}

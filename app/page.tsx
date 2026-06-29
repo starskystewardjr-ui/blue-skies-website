@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import TrustSection from "../components/TrustSection";
 
 const SQUARE_BOOKING_URL = "https://squareup.com/appointments/book/YOUR-LINK-HERE";
 
@@ -43,6 +44,8 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      <TrustSection />
     </main>
   );
 }

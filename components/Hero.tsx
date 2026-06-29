@@ -15,7 +15,7 @@ export default function Hero() {
         </p>
 
         <div className="button-row">
-          <a className="primary-btn" href={SQUARE_BOOKING_URL} target="_blank">
+          <a className="primary-btn" href={SQUARE_BOOKING_URL}>
             Book Appointment
           </a>
 
@@ -27,11 +27,16 @@ export default function Hero() {
 
       <div className="hero-visual">
         <div className="glass-card">
-          <p>Featured Standard</p>
-          <h2>Full Interior + Exterior Detail</h2>
-          <span>Our main full-service option for customers who want the vehicle properly handled inside and out.</span>
+          <p>Blue Skies Team</p>
+          <h2>Professional Mobile Detailing</h2>
+          <span>Uniformed, prepared, and built around trust.</span>
         </div>
       </div>
+
+      <a className="scroll-cue" href="#services">
+        <span>↓</span>
+        Scroll to Explore
+      </a>
     </section>
   );
 }
